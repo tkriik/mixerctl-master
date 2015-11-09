@@ -1,6 +1,6 @@
 ### what
 
-simple master volume tuning on OpenBSD using the [audio(4)](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man4/audio.4) driver layer
+simple master volume tuning on OpenBSD using the [mixer(4)](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man4/audio.4) driver layer
 
 
 ### get
