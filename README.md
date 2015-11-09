@@ -1,6 +1,6 @@
 ### what
 
-simple master volume tuning on OpenBSD using the [audio(4)](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man4/audio.4) device driver
+simple master volume tuning on OpenBSD using the [audio(4)](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man4/audio.4) driver layer
 
 
 ### get
@@ -14,7 +14,12 @@ make
 
 ### use
 
+increase master volume by 5%:
 ```sh
-./mixerctl-master +5    # increase master volume by 5%
-./mixerctl-master -10   # decrease master volume by 10%
+./mixerctl-master +5
+```
+
+decrease master volume by 10%:
+```sh
+./mixerctl-master -10
 ```
