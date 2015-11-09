@@ -11,11 +11,14 @@
 #include <string.h>
 #include <unistd.h>
 
+char *__progname;
 __dead void usage(void);
 
 int
 main(int argc, char *argv[])
 {
+	__progname = argv[0];
+
 	if (argc != 2)
 		usage();
 
@@ -82,7 +85,6 @@ main(int argc, char *argv[])
 __dead void
 usage(void)
 {
-	extern char *__progname;	/* from crt0.o */
 	fprintf(stderr, "usage: %s [+%%|-%%]\n", __progname);
 	exit(1);
 }
